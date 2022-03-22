@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-xidoc-2021_11_8.flake = false;
-  inputs.src-xidoc-2021_11_8.owner = "xigoi";
-  inputs.src-xidoc-2021_11_8.ref   = "2021_11_8";
-  inputs.src-xidoc-2021_11_8.repo  = "xidoc";
-  inputs.src-xidoc-2021_11_8.type  = "github";
+  inputs.src-xidoc-2022_3_21.flake = false;
+  inputs.src-xidoc-2022_3_21.owner = "xigoi";
+  inputs.src-xidoc-2022_3_21.ref   = "2022_3_21";
+  inputs.src-xidoc-2022_3_21.repo  = "xidoc";
+  inputs.src-xidoc-2022_3_21.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
@@ -32,10 +32,10 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xidoc-2021_11_8"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xidoc-2022_3_21"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-xidoc-2021_11_8";
+    src  = deps."src-xidoc-2022_3_21";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };
