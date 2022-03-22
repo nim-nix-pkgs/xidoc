@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xidoc-master.flake = false;
+  inputs.src-xidoc-master.ref   = "refs/heads/master";
   inputs.src-xidoc-master.owner = "xigoi";
-  inputs.src-xidoc-master.ref   = "master";
   inputs.src-xidoc-master.repo  = "xidoc";
   inputs.src-xidoc-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xidoc-2022_3_19.flake = false;
+  inputs.src-xidoc-2022_3_19.ref   = "refs/tags/2022.3.19";
   inputs.src-xidoc-2022_3_19.owner = "xigoi";
-  inputs.src-xidoc-2022_3_19.ref   = "2022_3_19";
   inputs.src-xidoc-2022_3_19.repo  = "xidoc";
   inputs.src-xidoc-2022_3_19.type  = "github";
   
