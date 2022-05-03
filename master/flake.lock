@@ -12,11 +12,11 @@
       },
       "locked": {
         "dir": "v1_5_23",
-        "lastModified": 1651555312,
-        "narHash": "sha256-V239K+/y6LOHnp8nngs1K2aPCH56LgXCElJaO8umNAA=",
+        "lastModified": 1651609682,
+        "narHash": "sha256-XK66Xbvp2yNwjxuJ6pCEhE7CvTchqYMEAKHwd9gR7L4=",
         "owner": "nim-nix-pkgs",
         "repo": "cligen",
-        "rev": "82acca79a9ca067d5dd57e786685f123d3806b1c",
+        "rev": "d1db6bc462c146fb7a72cd1965da6f8fa05c3965",
         "type": "github"
       },
       "original": {
@@ -132,11 +132,11 @@
     "src-xidoc-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1651567362,
-        "narHash": "sha256-R4XeV5IJYybFhZ5+O4R5N1o+Cqc1plSZb5TOVv4Z67E=",
+        "lastModified": 1651605871,
+        "narHash": "sha256-UDL5RcSIkoF72j+n6LQRB5QB468kvGqE4LEEfrc387s=",
         "owner": "xigoi",
         "repo": "xidoc",
-        "rev": "2113daf77824c740ef3da7ee07055b07107cb055",
+        "rev": "d524c343a093bbc66d40f8882c991cb4ded714cd",
         "type": "github"
       },
       "original": {
