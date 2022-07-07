@@ -116,19 +116,19 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-matext-2022_6_27": "src-matext-2022_6_27"
+        "src-matext-2022_7_6": "src-matext-2022_7_6"
       },
       "locked": {
-        "dir": "2022_6_27",
-        "lastModified": 1656747790,
-        "narHash": "sha256-Nlv5FkzGgHGVklgvUoxulW3ikRzliZi8AF4XClN1Xy4=",
+        "dir": "2022_7_6",
+        "lastModified": 1657153995,
+        "narHash": "sha256-KzRw84Lw7lJ1yXEyR8ugxbekKa5I/v9XWWNpAhzpICI=",
         "owner": "nim-nix-pkgs",
         "repo": "matext",
-        "rev": "0d73308762e35d8365d0e97bf2f6f79a1572d91b",
+        "rev": "840f4b2ccf7c35d8905d5b68d83afd43ba43761a",
         "type": "github"
       },
       "original": {
-        "dir": "2022_6_27",
+        "dir": "2022_7_6",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "matext",
@@ -235,19 +235,19 @@
         "type": "github"
       }
     },
-    "src-matext-2022_6_27": {
+    "src-matext-2022_7_6": {
       "flake": false,
       "locked": {
-        "lastModified": 1656335656,
-        "narHash": "sha256-HjAI9DkJnvlyQF0W2551uzLZa34nwK9lE2y2GzOzybA=",
+        "lastModified": 1657062173,
+        "narHash": "sha256-T9XgNmqIkEVvJrDH31xHE7TcDBQvdlBkb4Cd91tfQnA=",
         "owner": "~xigoi",
         "repo": "matext",
-        "rev": "dc46a35f48797438c45ff91d33e4a82461bca74e",
+        "rev": "3e2ca757f0906142fe7bbd976d78f33d71e840fa",
         "type": "sourcehut"
       },
       "original": {
         "owner": "~xigoi",
-        "ref": "2022.6.27",
+        "ref": "2022.7.6",
         "repo": "matext",
         "type": "sourcehut"
       }
