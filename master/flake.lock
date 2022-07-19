@@ -12,11 +12,11 @@
       },
       "locked": {
         "dir": "v1_5_25",
-        "lastModified": 1658031798,
-        "narHash": "sha256-DDoj+5wLyWO2i8z8Y7sci6EVmki+F7COIWVu7NUAxfo=",
+        "lastModified": 1658201311,
+        "narHash": "sha256-vNrNDEH+CnURGtMVBpTewF2mjecTl/HikCN8ao316Go=",
         "owner": "nim-nix-pkgs",
         "repo": "cligen",
-        "rev": "b91968ec6df808ca63f0ab5706e5d3d29b538270",
+        "rev": "0206b7f4f56224b1eed9ca45340176bde05bcac7",
         "type": "github"
       },
       "original": {
@@ -72,11 +72,11 @@
       },
       "locked": {
         "dir": "0_26_0",
-        "lastModified": 1658032089,
-        "narHash": "sha256-TzeljsYgmMXitwC5ue6P4C4fzXiEcTMXXg7+VGaj5vs=",
+        "lastModified": 1658201710,
+        "narHash": "sha256-+rNGs/36x7OCzbHoakiBqIYycIjhBjnWo5xiL0Xi68Y=",
         "owner": "nim-nix-pkgs",
         "repo": "npeg",
-        "rev": "ddd1a54d458e8c5ecbe310ad117c6705cad6bcab",
+        "rev": "b99531368b0a67bd486b0f05724c763954e19104",
         "type": "github"
       },
       "original": {
@@ -133,11 +133,11 @@
     "src-xidoc-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1656451110,
-        "narHash": "sha256-em9iGuHVM7Dy+H3+DVYRPHrwFbe39nlsipINAqujazY=",
+        "lastModified": 1658176131,
+        "narHash": "sha256-fxOH8c1lf4W1DMHUdIYFSA809X5H1QQaLWg5RhAAFSQ=",
         "owner": "xigoi",
         "repo": "xidoc",
-        "rev": "f81d67b29d19a616d51189c56c19bff855909088",
+        "rev": "659688b4378a8b61a916d050662bf8bbd4acfea3",
         "type": "github"
       },
       "original": {
