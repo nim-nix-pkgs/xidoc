@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-shopt -s globstar
-nvim xidoc.nimble src/**/*.nim docs/*.xd
