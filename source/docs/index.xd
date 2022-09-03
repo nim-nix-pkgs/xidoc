@@ -1,0 +1,61 @@
+[inject head.xd]
+[style [rule pre; [: overflow; auto]]]
+[p [color #d0c; [bf xidoc]] is a consistent and powerful markup language that compiles to HTML, [LaTeX] and Gemtext.]
+[section A Quick Look;
+  [p For a more interactive experience, you can try the online [link playground; playground.html].]
+  [section xidoc code;
+    [code-block xidoc; [raw
+[section HTML;
+  [p
+    HTML is such an [it ugly] language!
+    Each [code html; <tag>] has to be repeated twice.
+  ]
+]
+[section [LaTeX];
+  [p
+    [LaTeX] is great for writing math formulas like [$ e^{\tau i} = 1],
+    but it's painful to write with all those [code latex; \begin], [code latex; \end]
+    and different syntaxes for different things.
+  ]
+]
+    ]]
+  ]
+  [section Output;
+    [section HTML;
+      [p
+        HTML is such an [it ugly] language!
+        Each [code html; <tag>] has to be repeated twice.
+      ]
+    ]
+    [section [LaTeX];
+      [p
+        [LaTeX] is great for writing math formulas like [$ e^{\tau i} = 1],
+        but it's painful to write with all those [code latex; \begin], [code latex; \end]
+        and different syntaxes for different things.
+      ]
+    ]
+  ]
+]
+[section What can I do with xidoc?;
+  [list
+    Make a website;
+    Make the front-end of a web app;
+    Write your school notes;
+    Write an article;
+    Write a book;
+    Flex your skills at learning obscure languages;
+    Write a plain text file and wonder why it's giving errors if you include square brackets;
+  ]
+]
+[section What can I not do with xidoc?;
+  [list
+    Make the back-end of a web app;
+    Solve the Halting Problem;
+  ]
+]
+[section Logo;
+  [p The logo of xidoc is the letter ξ (xi) rendered in the color [color #d0c; #d0c].]
+]
+[section Source Code;
+  xidoc is available on [link SourceHut; https://sr.ht/~xigoi/xidoc/] and [link GitHub; https://github.com/xigoi/xidoc] under the GNU General Public Licence 3. (SourceHut is strongly preferred because [link it is important for free software to use free software infrastructure; https://drewdevault.com/2022/03/29/free-software-free-infrastructure.html].)
+]
