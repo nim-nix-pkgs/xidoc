@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-xidoc-2022_9_6.flake = false;
-  inputs.src-xidoc-2022_9_6.ref   = "refs/tags/2022.9.6";
-  inputs.src-xidoc-2022_9_6.owner = "xigoi";
-  inputs.src-xidoc-2022_9_6.repo  = "xidoc";
-  inputs.src-xidoc-2022_9_6.type  = "github";
+  inputs.src-xidoc-2022_11_7.flake = false;
+  inputs.src-xidoc-2022_11_7.ref   = "refs/tags/2022.11.7";
+  inputs.src-xidoc-2022_11_7.owner = "xigoi";
+  inputs.src-xidoc-2022_11_7.repo  = "xidoc";
+  inputs.src-xidoc-2022_11_7.type  = "github";
+  
+  inputs."aspartame".owner = "nim-nix-pkgs";
+  inputs."aspartame".ref   = "master";
+  inputs."aspartame".repo  = "aspartame";
+  inputs."aspartame".dir   = "master";
+  inputs."aspartame".type  = "github";
+  inputs."aspartame".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."aspartame".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
@@ -29,24 +37,16 @@
   inputs."matext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".owner = "nim-nix-pkgs";
-  inputs."npeg".ref   = "master";
-  inputs."npeg".repo  = "npeg";
-  inputs."npeg".dir   = "0_27_0";
-  inputs."npeg".type  = "github";
-  inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xidoc-2022_9_6"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xidoc-2022_11_7"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-xidoc-2022_9_6";
+    src  = deps."src-xidoc-2022_11_7";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );

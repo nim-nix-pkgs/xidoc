@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-xidoc-2022_9_6.flake = false;
-  inputs.src-xidoc-2022_9_6.ref   = "refs/tags/2022.9.6";
-  inputs.src-xidoc-2022_9_6.owner = "xigoi";
-  inputs.src-xidoc-2022_9_6.repo  = "xidoc";
-  inputs.src-xidoc-2022_9_6.type  = "github";
+  inputs.src-xidoc-2022_11_6.flake = false;
+  inputs.src-xidoc-2022_11_6.ref   = "refs/tags/2022.11.6";
+  inputs.src-xidoc-2022_11_6.owner = "xigoi";
+  inputs.src-xidoc-2022_11_6.repo  = "xidoc";
+  inputs.src-xidoc-2022_11_6.type  = "github";
+  
+  inputs."aspartame".owner = "nim-nix-pkgs";
+  inputs."aspartame".ref   = "master";
+  inputs."aspartame".repo  = "aspartame";
+  inputs."aspartame".dir   = "master";
+  inputs."aspartame".type  = "github";
+  inputs."aspartame".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."aspartame".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
@@ -40,13 +48,13 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xidoc-2022_9_6"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xidoc-2022_11_6"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-xidoc-2022_9_6";
+    src  = deps."src-xidoc-2022_11_6";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );
