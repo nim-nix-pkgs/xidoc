@@ -207,6 +207,22 @@
   inputs."xidoc-2022_11_14".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xidoc-2022_11_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xidoc-2022_11_23".dir   = "2022_11_23";
+  inputs."xidoc-2022_11_23".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_11_23".ref   = "master";
+  inputs."xidoc-2022_11_23".repo  = "xidoc";
+  inputs."xidoc-2022_11_23".type  = "github";
+  inputs."xidoc-2022_11_23".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_11_23".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_11_24".dir   = "2022_11_24";
+  inputs."xidoc-2022_11_24".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_11_24".ref   = "master";
+  inputs."xidoc-2022_11_24".repo  = "xidoc";
+  inputs."xidoc-2022_11_24".type  = "github";
+  inputs."xidoc-2022_11_24".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_11_24".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."xidoc-2022_11_3".dir   = "2022_11_3";
   inputs."xidoc-2022_11_3".owner = "nim-nix-pkgs";
   inputs."xidoc-2022_11_3".ref   = "master";
